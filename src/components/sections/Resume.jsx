@@ -78,7 +78,7 @@ const Resume = () => {
     return () => ctx.revert();
   }, []);
 
-  const resumeURL = "/documents/RakeshRanjan_CV.pdf";
+  const resumeURL = "/documents/Rajbardhan.pdf";
 
   return (
     <section
