@@ -1,0 +1,63 @@
+export const projects = [
+  {
+    id: 1,
+    title: "CareerGuide AI",
+    shortDesc: "AI-driven career guidance platform",
+    problemSolved: "Students lack personalized career direction",
+    description:
+      "Built full-stack AI career guidance platform with personalized recommendations based on skills, interests, and goals. JWT auth + role-based authorization + AI-powered chatbot. Optimized REST APIs improving response accuracy and system performance.",
+    techStack: ["React", "Node.js", "JWT", "MongoDB"],
+    liveURL: null,
+    githubURL: "https://github.com/RakeshRanjan6810/ai_career_guidance",
+    category: "fullstack",
+    badge: "Personal",
+    metrics: "AI-powered recommendations",
+    featured: true,
+    status: "Live",
+    date: "Dec 2025",
+  },
+  {
+    id: 2,
+    title: "Vingo",
+    shortDesc: "Real-time food delivery platform",
+    problemSolved:
+      "Need for live order tracking + secure payments in food delivery",
+    description:
+      "Real-time food delivery with live tracking, online payments via Razorpay. WebSocket live updates, Google/Email auth, geolocation tracking, role-based dashboards. Smooth multi-role UX across platform.",
+    techStack: [
+      "React",
+      "Node.js",
+      "JWT",
+      "MongoDB",
+      "Tailwind CSS",
+      "WebSocket",
+      "Razorpay",
+    ],
+    liveURL: null,
+    githubURL: "https://github.com/RakeshRanjan6810/VINGO_FOOD",
+    category: "fullstack",
+    badge: "Personal",
+    metrics: "Real-time tracking + payments",
+    featured: false,
+    status: "Live",
+    date: "Nov 2025",
+  },
+  {
+    id: 3,
+    title: "Blog Writing Platform",
+    shortDesc: "AI-powered blogging platform",
+    problemSolved:
+      "Content creators need AI assistance for writing and publishing",
+    description:
+      "AI-powered blogging with auto-generated summaries using Gemini API. JWT auth, category posting, social media sharing. Responsive UI + automated content enhancement workflows.",
+    techStack: ["React", "Node.js", "JWT", "MongoDB", "Gemini API"],
+    liveURL: null,
+    githubURL: "https://github.com/RakeshRanjan6810/QuickBlog",
+    category: "fullstack",
+    badge: "Personal",
+    metrics: "Gemini AI content generation",
+    featured: false,
+    status: "Live",
+    date: "Aug 2025",
+  },
+];
