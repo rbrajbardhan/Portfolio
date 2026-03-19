@@ -10,23 +10,21 @@ export const trainingData = [
     certificateLink:
       "https://drive.google.com/file/d/1aBdgMQkB3cUWHcrmwOxfS_JL75YynSdG/view?usp=sharing",
     description: [
-      "Completed hands-on training in full-stack web development using the MERN stack (MongoDB, Express.js, React.js, Node.js). Gained practical experience in building dynamic and scalable web applications, implementing JWT-based authentication, and developing RESTful APIs.",
-      "Worked on CRUD operations, dynamic routing, and database integration, along with deploying applications on cloud platforms such as Vercel and Render. Focused on improving API performance, responsive UI design, and modular backend architecture.",
+      "Completed hands-on summer training in Game Development using C# and Unity. Gained practical experience in building interactive 2D/3D games, understanding game mechanics, and implementing core gameplay systems.Developed a complete game project involving target-based gameplay, collider interactions, prefab instantiation, and randomized object spawning. Implemented scoring systems, UI management, audio integration, and final game optimization."
     ],
     achievements: [
-      "Built dynamic web apps using MERN stack",
-      "Configured JWT auth, CRUD operations, deployed on Vercel/Render",
-      "Improved feature delivery speed by 30%",
+      "Built a complete Unity-based game with targeting and scoring mechanics",
+      "Implemented prefab instantiation, collision detection, and randomized gameplay",
+      "Designed UI system and integrated game audio for better user experience",
     ],
-    metric: "⚡ 30% faster feature delivery",
+    metric: "🎮 Developed a complete playable Unity game",
     techStack: [
-      "MongoDB",
-      "Express.js",
-      "React.js",
-      "Node.js",
-      "JWT",
-      "Vercel",
-      "Render",
+      "C#",
+      "Unity",
+      "Game Development",
+      "UI Design",
+      "Audio Integration",
+      "Prefab System",
     ],
   },
 ];

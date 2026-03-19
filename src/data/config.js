@@ -4,7 +4,7 @@ export const config = {
   roles: ["AI/ML Engineer", "Problem Solver"],
   bioHtml:
     '<p>I am Rajbardhan Kumar, a Computer Science and Engineering student at Lovely Professional University with a strong interest in Artificial Intelligence and Machine Learning. I have a solid foundation in programming languages such as Python, Java, and C++, along with core concepts in data structures and algorithms.</p><p class="mt-4">I have hands-on experience building intelligent systems, including AI-based applications such as career guidance systems, recommendation engines, and data-driven platforms. My work demonstrates my ability to preprocess data, train machine learning models, and deploy scalable AI solutions.</p><p class="mt-4">I am skilled in libraries and tools such as NumPy, Pandas, Scikit-learn, and have a growing understanding of deep learning frameworks like TensorFlow and PyTorch. I am also familiar with model evaluation, feature engineering, and working with real-world datasets.</p><p class="mt-4">In addition, I have solved 200+ problems on LeetCode, strengthening my problem-solving skills and algorithmic thinking. I am particularly interested in building intelligent, efficient, and scalable AI systems that can solve real-world problems.</p>',
-  tagline: "Engineering intelligent solutions with machine learning and data",
+  tagline: "Building intelligent solutions with machine learning and data",
   email: "rbrajbardhankr@gmail.com",
   phone: "+91 6205368226",
   location: "Phagwara, Punjab",

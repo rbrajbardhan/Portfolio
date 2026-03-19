@@ -32,14 +32,14 @@ const highlights = [
   {
     icon: Code2,
     label: "Focus",
-    value: "Full Stack (MERN)",
+    value: "MACHINE LEARNING",
     color: "text-emerald-400",
     bgColor: "bg-emerald-400/10 border-emerald-400/20",
   },
   {
     icon: Award,
     label: "Problems Solved",
-    value: "200+ on LeetCode",
+    value: "150+ on LeetCode",
     color: "text-amber-400",
     bgColor: "bg-amber-400/10 border-amber-400/20",
   },

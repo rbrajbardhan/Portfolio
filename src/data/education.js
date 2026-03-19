@@ -25,14 +25,14 @@ export const educationData = [
       "Completed higher secondary education with a focus on Physics, Chemistry, and Mathematics, building a strong analytical foundation.",
     coursework: ["Physics", "Chemistry", "Mathematics"],
   },
-  {
-    id: 3,
-    degree: "Matriculation",
-    institution: "Nalanda Vidya Mandir, Patasang, Bihar",
-    duration: "Mar 2018 – May 2020",
-    grade: "Percentage: 95%",
-    description:
-      "Completed secondary education, developing strong fundamentals in science and mathematics along with communication skills.",
-    coursework: ["Science", "Mathematics", "English"],
-  },
+  // {
+  //   id: 3,
+  //   degree: "Matriculation",
+  //   institution: "Nalanda Vidya Mandir, Patasang, Bihar",
+  //   duration: "Mar 2018 – May 2020",
+  //   grade: "Percentage: 95%",
+  //   description:
+  //     "Completed secondary education, developing strong fundamentals in science and mathematics along with communication skills.",
+  //   coursework: ["Science", "Mathematics", "English"],
+  // },
 ];

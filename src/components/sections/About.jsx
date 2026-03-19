@@ -258,8 +258,8 @@ const About = () => {
             variants={containerVariants}
             className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4"
           >
-            <CounterCard label="Projects Built" targetValue={3} />
-            <CounterCard label="LeetCode Solved" targetValue={200} suffix="+" />
+            <CounterCard label="Projects Built" targetValue={3} suffix="+"/>
+            <CounterCard label="LeetCode Solved" targetValue={150} suffix="+" />
             <CounterCard label="Technologies" targetValue={7} suffix="+" />
             <CounterCard
               label="CGPA"

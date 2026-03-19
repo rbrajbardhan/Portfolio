@@ -29,4 +29,34 @@ export const certificates = [
     credentialURL:
       "https://drive.google.com/file/d/1VcdnmpwUh8mT4AiQMFNe8ciG4s3J14Qi/view?usp=sharing",
   },
+  // {
+  //   id: 3,
+  //   title: "Data Structures & Algorithms",
+  //   provider: "LPU / iamneo",
+  //   date: "Jan 2025",
+  //   description:
+  //     "Completed an intensive 72-hour program enhancing core DSA concepts and problem-solving techniques.",
+  //   credentialURL:
+  //     "https://drive.google.com/file/d/1VcdnmpwUh8mT4AiQMFNe8ciG4s3J14Qi/view?usp=sharing",
+  // },
+  // {
+  //   id: 3,
+  //   title: "Data Structures & Algorithms",
+  //   provider: "LPU / iamneo",
+  //   date: "Jan 2025",
+  //   description:
+  //     "Completed an intensive 72-hour program enhancing core DSA concepts and problem-solving techniques.",
+  //   credentialURL:
+  //     "https://drive.google.com/file/d/1VcdnmpwUh8mT4AiQMFNe8ciG4s3J14Qi/view?usp=sharing",
+  // },
+  // {
+  //   id: 3,
+  //   title: "Data Structures & Algorithms",
+  //   provider: "LPU / iamneo",
+  //   date: "Jan 2025",
+  //   description:
+  //     "Completed an intensive 72-hour program enhancing core DSA concepts and problem-solving techniques.",
+  //   credentialURL:
+  //     "https://drive.google.com/file/d/1VcdnmpwUh8mT4AiQMFNe8ciG4s3J14Qi/view?usp=sharing",
+  // },
 ];

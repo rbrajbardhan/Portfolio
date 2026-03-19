@@ -194,7 +194,7 @@ const Contact = () => {
                   type="text"
                   {...register("name")}
                   className={`w-full bg-[#1c1f2e] border ${errors.name ? "border-red-500/50" : "border-white/5 focus:border-brand-indigo/50"} rounded-xl px-5 py-4 text-white placeholder:text-gray-600 outline-none transition-all pointer-events-auto`}
-                  placeholder="John Doe"
+                  placeholder="Enter Your Name"
                 />
                 {errors.name && (
                   <span className="absolute -bottom-5 left-2 text-[10px] text-red-400">
@@ -210,7 +210,7 @@ const Contact = () => {
                   type="email"
                   {...register("email")}
                   className={`w-full bg-[#1c1f2e] border ${errors.email ? "border-red-500/50" : "border-white/5 focus:border-brand-indigo/50"} rounded-xl px-5 py-4 text-white placeholder:text-gray-600 outline-none transition-all pointer-events-auto`}
-                  placeholder="john@example.com"
+                  placeholder="Enter Your Email-ID"
                 />
                 {errors.email && (
                   <span className="absolute -bottom-5 left-2 text-[10px] text-red-400">
@@ -228,7 +228,7 @@ const Contact = () => {
                 type="text"
                 {...register("subject")}
                 className={`w-full bg-[#1c1f2e] border ${errors.subject ? "border-red-500/50" : "border-white/5 focus:border-brand-indigo/50"} rounded-xl px-5 py-4 text-white placeholder:text-gray-600 outline-none transition-all pointer-events-auto`}
-                placeholder="Job Opportunity at Tech Company"
+                placeholder="Enter Subject"
               />
               {errors.subject && (
                 <span className="absolute -bottom-5 left-2 text-[10px] text-red-400">
@@ -245,7 +245,7 @@ const Contact = () => {
                 {...register("message")}
                 rows="5"
                 className={`w-full bg-[#1c1f2e] border ${errors.message ? "border-red-500/50" : "border-white/5 focus:border-brand-indigo/50"} rounded-xl px-5 py-4 text-white placeholder:text-gray-600 outline-none transition-all resize-none pointer-events-auto`}
-                placeholder="Tell me about your project or opportunity..."
+                placeholder="Enter Your Message Here..."
               ></textarea>
               {errors.message && (
                 <span className="absolute -bottom-5 left-2 text-[10px] text-red-400">
