@@ -9,10 +9,14 @@ export const educationData = [
       "Exploring Artificial Intelligence and Machine Learning with a focus on model development, data analysis, and deploying scalable, real-world AI systems.",
     coursework: [
       "Data Structures & Algorithms",
-      "DBMS",
+      // "DBMS",
       "Operating Systems",
-      "Computer Networks",
+      // "Computer Networks",
       "OOP",
+      "AI/ML Fundamentals",
+      "NLP",
+      "computer vision",
+
     ],
   },
   {

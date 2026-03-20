@@ -23,7 +23,7 @@ const hackathonData = [
     id: 1,
     title: "Code-A-Haunt 2.0",
     organizer: "Coding Blocks LPU",
-    level: "State Level",
+    // level: "State Level",
     result: "Advanced to Round 2",
     date: "Feb 2025",
     icon: Trophy,

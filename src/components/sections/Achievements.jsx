@@ -24,7 +24,7 @@ const getAchievementConfig = (id) => {
       icon: Code2,
       iconBg: "bg-orange-500/20 border-orange-500/50",
       iconColor: "text-orange-400",
-      metric: "200+",
+      metric: "150+",
     },
     2: {
       borderColor: "border-l-4 border-l-amber-500",
@@ -34,7 +34,7 @@ const getAchievementConfig = (id) => {
       icon: Trophy,
       iconBg: "bg-amber-500/20 border-amber-500/50",
       iconColor: "text-amber-400",
-      stateTag: "State Level",
+      // stateTag: "State Level",
     },
   };
   return configs[id] || configs[1];

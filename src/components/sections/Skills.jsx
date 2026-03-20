@@ -14,9 +14,17 @@ import {
   SiGit,
   SiGithub,
   SiPostman,
+  SiPython,
+  SiPandas,
+  SiNumpy,
+  SiPlotly,
+  SiScikitlearn,
+  SiJupyter,
+  SiDjango,
+  
 } from "react-icons/si";
 
-import { FaJava, FaBrain, FaUsers, FaTasks } from "react-icons/fa";
+import { FaJava, FaBrain, FaUsers, FaTasks, FaSyncAlt, FaUserTie } from "react-icons/fa";
 import { FaC, FaPeopleArrows } from "react-icons/fa6";
 
 import { skills } from "../../data/skills";
@@ -24,9 +32,14 @@ import { skills } from "../../data/skills";
 // Map string names from data to actual React components
 const iconMap = {
   FaJava,
+  SiPython,
   SiCplusplus,
+  SiPandas,
+  SiNumpy,
+  SiPlotly,
   FaC,
   SiJavascript,
+  SiScikitlearn,
   SiReact,
   SiNodedotjs,
   SiExpress,
@@ -40,12 +53,16 @@ const iconMap = {
   FaUsers,
   FaPeopleArrows,
   FaTasks,
+  FaUserTie,
+  SiJupyter,
+  SiDjango,
+  FaSyncAlt,
 };
 
 const categories = [
   "All",
   "Languages",
-  "Frameworks",
+  "Libraries",
   "Tools/Platforms",
   "Soft Skills",
 ];
@@ -174,8 +191,8 @@ const Skills = () => {
         </div>
 
         <p className="text-gray-400 max-w-md md:text-right font-sans">
-          Curated selection of technologies I use to build scalable,
-          high-performance web applications.
+          Curated set of technologies I use to build intelligent AI systems 
+          and scalable, data-driven applications.
         </p>
       </div>
 

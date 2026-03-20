@@ -1,15 +1,15 @@
 export const config = {
-  name: "Rajbardhan Kumar",
-  role: "AI/ML Engineer",
-  roles: ["AI/ML Engineer", "Problem Solver"],
+  name: "Rajbardhan.",
+  role: "AI/ML Enthusiast",
+  roles: ["AI/ML Enthusiast", "Problem Solver"],
   bioHtml:
-    '<p>I am Rajbardhan Kumar, a Computer Science and Engineering student at Lovely Professional University with a strong interest in Artificial Intelligence and Machine Learning. I have a solid foundation in programming languages such as Python, Java, and C++, along with core concepts in data structures and algorithms.</p><p class="mt-4">I have hands-on experience building intelligent systems, including AI-based applications such as career guidance systems, recommendation engines, and data-driven platforms. My work demonstrates my ability to preprocess data, train machine learning models, and deploy scalable AI solutions.</p><p class="mt-4">I am skilled in libraries and tools such as NumPy, Pandas, Scikit-learn, and have a growing understanding of deep learning frameworks like TensorFlow and PyTorch. I am also familiar with model evaluation, feature engineering, and working with real-world datasets.</p><p class="mt-4">In addition, I have solved 200+ problems on LeetCode, strengthening my problem-solving skills and algorithmic thinking. I am particularly interested in building intelligent, efficient, and scalable AI systems that can solve real-world problems.</p>',
-  tagline: "Building intelligent solutions with machine learning and data",
+    '<p>I am Rajbardhan Kumar, a Computer Science and Engineering student at Lovely Professional University with a strong focus on Artificial Intelligence, Machine Learning, and scalable backend systems. I have a solid foundation in programming languages such as Python, Java, and C++, along with strong problem-solving skills in Data Structures and Algorithms.</p><p class="mt-4">I have hands-on experience building intelligent and data-driven systems, including a TF-IDF based semantic search engine for Indian Parliament records and an AI-powered market research assistant that integrates multiple APIs to generate real-time business insights, competitive analysis, and industry trends.</p><p class="mt-4">My experience also includes developing scalable backend systems such as a full-stack e-commerce platform with real-time analytics and robust inventory management using atomic transactions. Additionally, I have explored interactive application development through game development using Unity and C#.</p><p class="mt-4">I am skilled in Python-based AI/ML tools such as NumPy, Pandas, and Scikit-learn, with practical experience in NLP, data processing, and building end-to-end intelligent systems. I have solved 150+ problems on LeetCode, strengthening my algorithmic thinking and ability to design efficient solutions.</p><p class="mt-4">I am particularly interested in building intelligent, scalable, and real-world impactful systems at the intersection of AI and backend engineering.</p>',
+  tagline: "Building intelligent AI systems and scalable backend solutions for real-world impact",
   email: "rbrajbardhankr@gmail.com",
   phone: "+91 6205368226",
   location: "Phagwara, Punjab",
   availability: true,
-  availabilityText: "Available for Work",
+  availabilityText: "Available for Work", // Available for Work
   responseTime: "Usually replies within 24 hours",
   currentlyLearning: ["Deep Learning", "Natural Language Processing", "Computer Vision", "MLOps & Model Deployment"],
   cgpa: "8.31",

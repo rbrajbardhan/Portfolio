@@ -58,7 +58,7 @@ export const projects = [
   metrics: "Real-time analytics + automated inventory tracking",
   
   featured: false,
-  status: "Completed",
+  status: "Ongoing",
   date: "Feb 2026",
   },
   {
@@ -89,7 +89,7 @@ export const projects = [
   
   metrics: "Multi-source real-time market insights generation",
   
-  featured: true,
+  featured: false,
   status: "Completed",
   date: "Apr 2025",
   },

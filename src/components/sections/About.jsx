@@ -212,7 +212,7 @@ const About = () => {
 
             {/* Badges */}
             <div className="absolute -top-4 -right-2 md:-right-6 bg-brand-indigo/90 backdrop-blur text-white text-xs font-mono px-4 py-2 rounded-xl border border-brand-indigo/50 shadow-[0_0_20px_rgba(99,102,241,0.3)] z-20 pointer-events-auto">
-              MERN Developer
+              AI/ML Enthusiast
             </div>
 
             {config.availability && (
@@ -258,7 +258,7 @@ const About = () => {
             variants={containerVariants}
             className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4"
           >
-            <CounterCard label="Projects Built" targetValue={3} suffix="+"/>
+            <CounterCard label="Projects Built" targetValue={5} suffix="+"/>
             <CounterCard label="LeetCode Solved" targetValue={150} suffix="+" />
             <CounterCard label="Technologies" targetValue={7} suffix="+" />
             <CounterCard

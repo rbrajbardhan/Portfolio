@@ -1,131 +1,50 @@
 import { useRef } from "react";
-import {
-  motion,
-  useScroll,
-  useTransform,
-  useMotionTemplate,
-} from "framer-motion";
 import { ExternalLink, Github, Sparkles } from "lucide-react";
-import MagneticButton from "../ui/MagneticButton";
 
 const FeaturedProjectCard = ({ project }) => {
   const containerRef = useRef(null);
 
-  // Parallax scroll effects
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"],
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
-  const opacity = useTransform(
-    scrollYProgress,
-    [0, 0.2, 0.8, 1],
-    [0.3, 1, 1, 0.3],
-  );
-  const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.95, 1, 0.95]);
-
-  // Mouse tilt effect
-  const cardRef = useRef(null);
-  const mouseX = useRef(0);
-  const mouseY = useRef(0);
-
-  const handleMouseMove = (e) => {
-    if (!cardRef.current) return;
-    const { left, top, width, height } =
-      cardRef.current.getBoundingClientRect();
-    const x = (e.clientX - left - width / 2) / 25; // Tilt intensity
-    const y = -(e.clientY - top - height / 2) / 25;
-
-    cardRef.current.style.transform = `perspective(1000px) rotateX(${y}deg) rotateY(${x}deg) scale3d(1.02, 1.02, 1.02)`;
-
-    // Update glow position
-    mouseX.current = e.clientX - left;
-    mouseY.current = e.clientY - top;
-    cardRef.current.style.setProperty("--m-x", `${mouseX.current}px`);
-    cardRef.current.style.setProperty("--m-y", `${mouseY.current}px`);
-  };
-
-  const handleMouseLeave = () => {
-    if (!cardRef.current) return;
-    cardRef.current.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
-  };
-
   return (
-    <motion.div
-      ref={containerRef}
-      style={{ opacity, scale }}
-      className="w-full mb-32 relative group perspective-1000 z-10"
-    >
+    <div ref={containerRef} className="w-full mb-32 relative group perspective-1000 z-10">
       <div
-        ref={cardRef}
-        onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
-        className="relative w-full rounded-[2rem] overflow-hidden border-2 border-brand-indigo/60 transition-transform duration-300 ease-out bg-white/8 backdrop-blur-xl shadow-[0_0_50px_rgba(99,102,241,0.2)] hover:shadow-[0_0_80px_rgba(99,102,241,0.3)]"
+        className="relative w-full rounded-[2rem] overflow-hidden border-2 border-brand-indigo/60 bg-white/8 backdrop-blur-xl shadow-[0_0_50px_rgba(99,102,241,0.2)]"
         style={{
           transformStyle: "preserve-3d",
-          "--m-x": "50%",
-          "--m-y": "50%",
         }}
       >
         {/* Top Badges */}
         <div className="absolute top-6 left-6 right-6 flex justify-between z-40">
           <div className="flex gap-3">
-            <motion.span
+            <span
               className="px-4 py-2 rounded-full text-sm font-mono font-bold text-white bg-brand-indigo/30 border border-brand-indigo/60 backdrop-blur-md"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.3 }}
             >
               Featured
-            </motion.span>
-            <motion.span
+            </span>
+            <span
               className="px-4 py-2 rounded-full text-sm font-bold text-brand-cyan bg-brand-cyan/20 border border-brand-cyan/60 backdrop-blur-md flex items-center gap-2 shadow-[0_0_20px_rgba(6,182,212,0.3)]"
-              animate={{
-                textShadow: [
-                  "0_0_10px_rgba(6,182,212,0.5)",
-                  "0_0_20px_rgba(6,182,212,0.8)",
-                  "0_0_10px_rgba(6,182,212,0.5)",
-                ],
-              }}
-              transition={{ duration: 3, repeat: Infinity }}
             >
               <Sparkles size={16} /> AI Powered
-            </motion.span>
+            </span>
           </div>
         </div>
-
-        {/* Dynamic Interactive Glow */}
-        <div
-          className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-          style={{
-            background: `radial-gradient(800px circle at var(--m-x) var(--m-y), rgba(99, 102, 241, 0.1), transparent 40%)`,
-          }}
-        />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 relative z-10 pt-20 lg:pt-0">
           {/* Image Side (7 cols) - Gradient Placeholder */}
           {/* Image Side (7 cols) - Gradient Placeholder */}
           <div className="lg:col-span-7 relative min-h-[300px] lg:h-auto overflow-hidden bg-linear-to-br from-brand-indigo via-brand-cyan to-indigo-900 flex flex-col items-center justify-center">
-            <motion.div
-              style={{ y }}
-              className="w-full h-full relative origin-center flex flex-col items-center justify-center px-6"
-            >
+            <div className="w-full h-full relative origin-center flex flex-col items-center justify-center px-6">
               {/* Giant Abstract Initial Letter */}
               <div className="absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none">
-                <motion.div
-                  animate={{ scale: [1, 1.05, 1], rotate: [0, 2, -2, 0] }}
-                  transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-                >
+                <div>
                   <span className="text-[200px] md:text-[300px] lg:text-[400px] leading-none font-display font-black text-white mix-blend-overlay filter blur-[1px] opacity-40">
                     {project.title.charAt(0)}
                   </span>
-                </motion.div>
+                </div>
               </div>
 
               {/* Overlay Gradient to blend with text side */}
               <div className="absolute inset-y-0 right-0 w-32 md:w-48 bg-linear-to-l from-brand-surface via-brand-surface/80 to-transparent hidden lg:block z-30" />
-            </motion.div>
+            </div>
           </div>
 
           {/* Content Side (5 cols) */}
@@ -199,12 +118,9 @@ const FeaturedProjectCard = ({ project }) => {
                 rel="noreferrer"
                 className="flex-1 outline-none focus:outline-none"
               >
-                <MagneticButton
-                  variant="primary"
-                  className="w-full py-3! px-6! text-base gap-2"
-                >
+                <button className="w-full py-3 px-6 text-base gap-2 rounded-lg bg-brand-cyan/20 border border-brand-cyan/50 text-brand-cyan flex items-center justify-center">
                   Live Demo <ExternalLink size={18} />
-                </MagneticButton>
+                </button>
               </a>
               <a
                 href={project.githubURL || "#"}
@@ -212,18 +128,15 @@ const FeaturedProjectCard = ({ project }) => {
                 rel="noreferrer"
                 className="flex-1 outline-none focus:outline-none"
               >
-                <MagneticButton
-                  variant="secondary"
-                  className="w-full py-3! px-6! text-base gap-2"
-                >
+                <button className="w-full py-3 px-6 text-base gap-2 rounded-lg bg-white/10 border border-white/20 text-white flex items-center justify-center">
                   GitHub <Github size={18} />
-                </MagneticButton>
+                </button>
               </a>
             </div>
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

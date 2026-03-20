@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {
@@ -15,7 +14,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 import { projects } from "../../data/projects";
 
-const categories = ["All", "Frontend", "Full Stack"];
+const categories = ["All", "AI/ML", "Full Stack"];
 
 const getGradientPlaceholder = (projectId) => {
   const placeholders = {
@@ -44,13 +43,8 @@ const RegularProjectCard = ({ project }) => {
   const IconComponent = placeholder.icon;
 
   return (
-    <motion.div
-      layout
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, scale: 0.95 }}
-      transition={{ duration: 0.4 }}
-      className="group relative rounded-3xl overflow-hidden border border-white/15 transition-all duration-500 hover:-translate-y-2 cursor-none hover:shadow-[0_20px_50px_rgba(99,102,241,0.2)] bg-white/8 backdrop-blur-xl"
+    <div
+      className="group relative rounded-3xl overflow-hidden border border-white/15 cursor-none bg-white/8 backdrop-blur-xl"
     >
       {/* Image Container with Gradient Placeholder */}
       <div
@@ -65,7 +59,7 @@ const RegularProjectCard = ({ project }) => {
             {placeholder.letter}
           </span>
         </div>
-        <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors duration-500" />
+        <div className="absolute inset-0 bg-black/10" />
 
         {/* Top Badges */}
         <div className="absolute top-4 left-4 right-4 flex justify-between z-20">
@@ -82,7 +76,7 @@ const RegularProjectCard = ({ project }) => {
 
       {/* Content */}
       <div className="p-8 relative z-20 bg-gradient-to-b from-white/5 to-brand-base/80">
-        <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-3 group-hover:text-brand-cyan transition-colors">
+        <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-3">
           {project.title}
         </h3>
 
@@ -103,7 +97,7 @@ const RegularProjectCard = ({ project }) => {
           {(project.techStack || []).map((t, i) => (
             <span
               key={i}
-              className="text-xs font-mono uppercase tracking-wider text-gray-300 bg-white/10 border border-white/20 px-3 py-1.5 rounded-lg hover:border-brand-indigo/50 transition-colors"
+              className="text-xs font-mono uppercase tracking-wider text-gray-300 bg-white/10 border border-white/20 px-3 py-1.5 rounded-lg"
             >
               {t}
             </span>
@@ -120,7 +114,7 @@ const RegularProjectCard = ({ project }) => {
               project.liveURL ? "flex-1 group/btn" : "w-full group/btn"
             }
           >
-            <button className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white hover:bg-white/15 hover:border-brand-indigo/50 transition-all duration-300 flex items-center justify-center gap-2 font-medium text-sm hover:shadow-[0_0_20px_rgba(99,102,241,0.2)]">
+            <button className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white flex items-center justify-center gap-2 font-medium text-sm">
               <Github size={16} /> GitHub
             </button>
           </a>
@@ -131,14 +125,14 @@ const RegularProjectCard = ({ project }) => {
               rel="noreferrer"
               className="flex-1 group/btn"
             >
-              <button className="w-full px-4 py-3 rounded-lg bg-brand-cyan/20 border border-brand-cyan/50 text-brand-cyan hover:bg-brand-cyan/30 transition-all duration-300 flex items-center justify-center gap-2 font-medium text-sm hover:shadow-[0_0_20px_rgba(6,182,212,0.3)]">
+              <button className="w-full px-4 py-3 rounded-lg bg-brand-cyan/20 border border-brand-cyan/50 text-brand-cyan flex items-center justify-center gap-2 font-medium text-sm">
                 <ExternalLink size={16} /> Live
               </button>
             </a>
           )}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
@@ -149,10 +143,9 @@ const Projects = () => {
   const featuredProject = projects.find((p) => p.featured);
   const regularProjects = projects.filter(
     (p) =>
-      !p.featured &&
-      (activeTab === "All" ||
+      activeTab === "All" ||
         p.category.toLowerCase().replace(" ", "") ===
-          activeTab.toLowerCase().replace(" ", "")),
+          activeTab.toLowerCase().replace(" ", ""),
   );
 
   useEffect(() => {
@@ -198,7 +191,7 @@ const Projects = () => {
 
         {/* Cinematic Featured Project */}
         {featuredProject && (
-          <div className="project-header">
+          <div>
             <FeaturedProjectCard project={featuredProject} />
           </div>
         )}
@@ -216,10 +209,8 @@ const Projects = () => {
               }`}
             >
               {activeTab === cat && (
-                <motion.div
-                  layoutId="activeProjTab"
+                <div
                   className="absolute inset-0 bg-brand-indigo/30 rounded-full border border-brand-indigo/60 shadow-[0_0_20px_rgba(99,102,241,0.3)]"
-                  transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                 />
               )}
               <span className="relative z-10">{cat}</span>
@@ -228,16 +219,11 @@ const Projects = () => {
         </div>
 
         {/* Bento Grid layout for regular projects */}
-        <motion.div
-          layout
-          className="grid grid-cols-1 md:grid-cols-2 gap-6 relative"
-        >
-          <AnimatePresence mode="popLayout">
-            {regularProjects.map((project) => (
-              <RegularProjectCard key={project.id} project={project} />
-            ))}
-          </AnimatePresence>
-        </motion.div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative">
+          {regularProjects.map((project) => (
+            <RegularProjectCard key={project.id} project={project} />
+          ))}
+        </div>
       </div>
     </section>
   );

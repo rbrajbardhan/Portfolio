@@ -152,7 +152,7 @@ const Resume = () => {
                 <div className="flex justify-between items-center w-full z-10 px-6 pb-2">
                   <div className="flex flex-col items-center w-1/3">
                     <p className="text-[28px] font-display font-bold text-[#00e5ff] mb-1 mt-1">
-                      3+
+                      5+
                     </p>
                     <p className="text-[9px] text-gray-500 uppercase tracking-widest font-semibold">
                       Projects
@@ -161,7 +161,7 @@ const Resume = () => {
                   <div className="w-px h-10 bg-white/10" />
                   <div className="flex flex-col items-center w-1/3">
                     <p className="text-[28px] font-display font-bold text-brand-indigo mb-1 mt-1">
-                      200+
+                      150+
                     </p>
                     <p className="text-[9px] text-gray-500 uppercase tracking-widest font-semibold">
                       Problems

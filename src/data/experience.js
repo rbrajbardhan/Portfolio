@@ -17,7 +17,7 @@ export const trainingData = [
       "Implemented prefab instantiation, collision detection, and randomized gameplay",
       "Designed UI system and integrated game audio for better user experience",
     ],
-    metric: "🎮 Developed a complete playable Unity game",
+    // metric: "🎮 Developed a complete playable Unity game",
     techStack: [
       "C#",
       "Unity",
