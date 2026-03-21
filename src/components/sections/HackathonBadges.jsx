@@ -21,15 +21,15 @@ gsap.registerPlugin(ScrollTrigger);
 const hackathonData = [
   {
     id: 1,
-    title: "Code-A-Haunt 2.0",
-    organizer: "Coding Blocks LPU",
+    title: "WEBकाHACKATHON",
+    organizer: "Team 7",
     // level: "State Level",
     result: "Advanced to Round 2",
     date: "Feb 2025",
     icon: Trophy,
     color: "amber",
     verifyURL:
-      "https://drive.google.com/file/d/11UsiYU8MGkYnHPVsv_Ba1SIe7oWjhi6C/view",
+      "https://drive.google.com/file/d/1DhnKP4JiqNXIpQ0nZVqgHJlhmXxjFsTh/view?usp=sharing",
     highlights: [
       "Competitive coding hackathon among statewide participants",
       "Advanced beyond initial elimination rounds",
