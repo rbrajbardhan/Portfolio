@@ -21,19 +21,16 @@ const getGradientPlaceholder = (projectId) => {
     2: {
       gradient: "from-orange-600 via-red-500 to-orange-600",
       icon: UtensilsCrossed,
-      letter: "V",
     },
     3: {
       gradient: "from-purple-600 via-indigo-500 to-pink-600",
       icon: PenTool,
-      letter: "B",
     },
   };
   return (
     placeholders[projectId] || {
       gradient: "from-indigo-600 via-cyan-500 to-indigo-600",
       icon: null,
-      letter: "?",
     }
   );
 };
@@ -41,6 +38,7 @@ const getGradientPlaceholder = (projectId) => {
 const RegularProjectCard = ({ project }) => {
   const placeholder = getGradientPlaceholder(project.id);
   const IconComponent = placeholder.icon;
+  const projectInitial = (project.title || "?").trim().charAt(0).toUpperCase();
 
   return (
     <div
@@ -56,7 +54,7 @@ const RegularProjectCard = ({ project }) => {
             <IconComponent size={64} className="text-white/40 mb-4" />
           )}
           <span className="text-8xl font-display font-bold text-white/20">
-            {placeholder.letter}
+            {projectInitial}
           </span>
         </div>
         <div className="absolute inset-0 bg-black/10" />

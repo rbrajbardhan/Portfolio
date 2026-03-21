@@ -16,7 +16,7 @@ const defaultNavLinks = [
   { name: "Certificates", id: "certificates" },
   { name: "Achievements", id: "achievements" },
   { name: "Training", id: "training" },
-  { name: "Badges", id: "hackathon-badges" },
+  // { name: "Badges", id: "hackathon-badges" },
   { name: "Contact", id: "contact" },
 ];
 

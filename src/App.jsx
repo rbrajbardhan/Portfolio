@@ -18,7 +18,7 @@ import Projects from "./components/sections/Projects";
 import Certificates from "./components/sections/Certificates";
 import Achievements from "./components/sections/Achievements";
 import Training from "./components/sections/Training";
-import HackathonBadges from "./components/sections/HackathonBadges";
+// import HackathonBadges from "./components/sections/HackathonBadges";
 import Contact from "./components/sections/Contact";
 
 const Home = () => (
@@ -45,7 +45,7 @@ const Home = () => (
     <Certificates />
     <Achievements />
     <Training />
-    <HackathonBadges />
+    {/* <HackathonBadges /> */}
     <Contact />
   </main>
 );
