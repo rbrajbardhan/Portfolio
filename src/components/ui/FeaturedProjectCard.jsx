@@ -112,7 +112,7 @@ const FeaturedProjectCard = ({ project }) => {
               className="flex items-center gap-4 mt-6 lg:mt-0"
               style={{ transform: "translateZ(50px)" }}
             >
-              <a
+              {/* <a
                 href={project.liveURL || "#"}
                 target="_blank"
                 rel="noreferrer"
@@ -121,12 +121,12 @@ const FeaturedProjectCard = ({ project }) => {
                 <button className="w-full py-3 px-6 text-base gap-2 rounded-lg bg-brand-cyan/20 border border-brand-cyan/50 text-brand-cyan flex items-center justify-center">
                   Live Demo <ExternalLink size={18} />
                 </button>
-              </a>
+              </a> */}
               <a
                 href={project.githubURL || "#"}
                 target="_blank"
                 rel="noreferrer"
-                className="flex-1 outline-none focus:outline-none"
+                className="w-full outline-none focus:outline-none"
               >
                 <button className="w-full py-3 px-6 text-base gap-2 rounded-lg bg-white/10 border border-white/20 text-white flex items-center justify-center">
                   GitHub <Github size={18} />
