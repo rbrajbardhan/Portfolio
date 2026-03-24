@@ -115,7 +115,7 @@ export const skills = [
     name: "Problem-Solving",
     icon: "FaBrain",
     category: "Soft Skills",
-    level: "Expert",
+    level: "Advanced",
     color: "#A78BFA",
   },
   {
